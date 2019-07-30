@@ -1,0 +1,31 @@
+
+body
+{
+	margin: 0;
+}
+.a:hover{
+	border: 20px solid pink;
+	background-color: orange;
+	width: 80%;
+	height: 600px;
+	margin: 20px;
+	padding: 40px 40px 40px 40px;
+	text-align: center;
+	padding-top: 500px;
+	margin:auto;
+	font-size: 25pt;
+	transition: background-color 1sec;
+}
+#b{
+	border: 20px solid green;
+	background-color: blue;
+	width: 80%;
+	height: 600px;
+	margin: 20px;
+	padding: 40px 40px 40px 40px;
+	text-align: center;
+	padding-top: 500px;
+	margin:auto;
+	font-size: 25pt;
+	transition: background-color 1sec;
+	transition: font font-size 1sec;

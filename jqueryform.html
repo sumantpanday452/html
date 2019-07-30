@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery3</title>
+
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style type="text/css">
+	.col-md-6{
+		 border: 5px solid black;
+  		border-radius: 25px;
+  		padding: 50px;
+  		box-shadow: 100px;
+  		background-color: lightyellow;
+  		padding-top: 50px;
+
+	}
+	#btn{
+		background-color: lightblue;
+	}
+	#cn{
+		border: 100px;
+	}
+
+	
+</style>
+
+</head>
+<body>
+	<div id="div" style="background-color: white;height: 150px;width:1000px;">
+		
+		<div  id="cn " class="container">
+			<div class="row">
+				<div class="col-md-offset-3 col-md-6">
+					<h1 >Registration</h1>
+					<form class="form-horizontal">
+						<input id="user" type="text" class="form-control" placeholder="username"><br><br>
+						<p id="user_error"></p>
+						<input id="pwd" type="password" class="form-control" placeholder="user_password"><br><br>
+						<p id="pwd_error"></p>
+
+						<input type="email" class="form-control" placeholder="user_mail"><br><br>
+
+						<input type="tel" class="form-control" placeholder="user_phone"><br><br>
+
+							<button id="btn" class="btn btn-primary">submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+
+
+	</div>
+
+
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var user;
+		var pwd;
+		$('#user').keyup(function(){
+		user =$("#user").val();
+		
+		if(user.length<4)
+		{
+			$('#user_error').html("please enter the username");
+			$('#user_error').css("color","red")
+		}
+		else
+		{
+			$('#user_error').html("");
+		}
+
+		});	
+
+		$('#pwd').keyup(function(){
+		pwd =$("#pwd").val();
+		if(pwd.length<8)
+		{
+			$('#pwd_error').html("password should be greater then 8 char.");
+			$('#pwd_error').css("color","red")
+		}
+		else
+		{
+			$('#pwd_error').html("");
+		}
+
+		});
+	});
+</script>
+</html>

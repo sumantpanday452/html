@@ -1,0 +1,30 @@
+div{
+	border: 20px solid pink;
+	background-color: orange;
+	
+	margin: 20px;
+	padding: 500px 500px 500px 500px;
+	text-align: center;
+	float: left;
+	margin:auto;
+	font-size: 25pt;
+	border-radius: 500px;
+}
+	
+}
+#c{
+	
+	width: 100px;
+	box-shadow: 5px 5px 2px red;
+	float: left;
+
+#c:focus{
+	background-color: grey;
+	width: 600px;
+	
+	transition: width 2s;
+}
+label{
+	text-shadow: 3px 3px 2px white;
+	
+}

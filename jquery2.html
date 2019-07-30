@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery+css </title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+		
+</head>
+<body>
+
+	<div id="ab" style="border: 1px solid black;height: 50px;width: 80%"><center>heading</center></div>
+	<div id="cd" style="border: 1px solid black;height: 1000px;width: 80%;display: none;">body</div>
+	<button id="btn">click</button>
+	<input id="roll" type="text" name="">
+
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#ab").click(function(){
+			$("#cd").slideDown(50000);
+		});
+		$("#btn").click(function(){
+			$("#cd").stop();
+		});
+		$("#ab").mouseenter(function(){
+			$("#ab").css("background-color"," yellow");
+
+			$("#ab").html("mouseenter");
+			
+
+			});
+		$("#ab").mouseleave(function(){
+			$("#ab").css("background-color"," blue");
+
+		
+			$("#ab").html("mouseleave");
+			});
+
+			$("#roll").mouseenter(function(){
+			$("#roll").val("11111");
+			});
+	});
+		
+
+	
+	
+</script>
+</html>
